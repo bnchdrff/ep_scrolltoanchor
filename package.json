@@ -1,0 +1,29 @@
+{
+  "name": "ep_scrolltoanchor",
+  "version": "0.0.1",
+  "keywords": [
+    "scroll",
+    "scrollto",
+    "anchor"
+  ],
+  "description": "Scroll to line containing #anchor based on a parameter of anchor in the URL, e.g. http://test.com/p/foo#anchor=Cool",
+  "contributors": [
+    {
+      "name": "Benjamin Chodoroff",
+      "email": "bc@thermitic.net",
+      "url": "https://detriot.org/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bnchdrff/ep_scrolltoanchor.git"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "readme": "",
+  "readmeFilename": "README.md",
+  "_id": "ep_scrolltoanchor@0.0.1",
+  "_from": "ep_scrolltoanchor@"
+}
