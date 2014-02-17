@@ -22,8 +22,9 @@
   "engines": {
     "node": "*"
   },
-  "readme": "",
+  "readme": "# ep_scrollltoanchor\n\nScroll to an anchor on pad join\n\n## How to use\n\nAdd an anchor by typing in a new line containing only `#anchorname`\n\nManually add #anchor=anchorname (replace anchorname with the anchor to look for) to the URL\n\n## Credits\n\nBased on [JohnMcLear/ep_scrollto](https://github.com/JohnMcLear/ep_scrollto)\n",
   "readmeFilename": "README.md",
-  "_id": "ep_scrolltoanchor@0.0.1",
-  "_from": "ep_scrolltoanchor@"
+  "bugs": {
+    "url": "https://github.com/bnchdrff/ep_scrolltoanchor/issues"
+  }
 }
