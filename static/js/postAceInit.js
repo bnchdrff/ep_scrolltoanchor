@@ -1,4 +1,4 @@
-exports.postAceInit = function(hook, context){
+exports.postAceInit = function(hook, context) {
 
   var anchor = getUrlVars()['anchor'];
   if (anchor) {
@@ -9,8 +9,8 @@ exports.postAceInit = function(hook, context){
 
 function findAnchorAndScrollTo(anchor) {
   var count = 1;
-  $('iframe[name="ace_outer"]').contents().find('iframe').contents().find("#innerdocbody").contents().each(function(){
-    if ($(this).text() == anchor){
+  $('iframe[name="ace_outer"]').contents().find('iframe').contents().find("#innerdocbody").contents().each(function() {
+    if ($(this).text() == '#' + anchor) {
       var newY = $(this).context.offsetTop + "px";
       var $outerdoc = $('iframe[name="ace_outer"]').contents().find("#outerdocbody");
       var $outerdocHTML = $('iframe[name="ace_outer"]').contents().find("#outerdocbody").parent();
@@ -22,18 +22,16 @@ function findAnchorAndScrollTo(anchor) {
   });
 }
 
-function getUrlVars(){
+function getUrlVars() {
   var vars = [], hash;
   var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-  for(var i = 0; i < hashes.length; i++)
-  {
+  for(var i = 0; i < hashes.length; i++) {
     hash = hashes[i].split('=');
     vars.push(hash[0]);
     vars[hash[0]] = hash[1];
   }
   var hashes = window.location.href.slice(window.location.href.indexOf('#') + 1).split('&');
-  for(var i = 0; i < hashes.length; i++)
-  {
+  for(var i = 0; i < hashes.length; i++) {
     hash = hashes[i].split('=');
     vars.push(hash[0]);
     vars[hash[0]] = hash[1];
