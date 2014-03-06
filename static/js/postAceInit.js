@@ -10,7 +10,7 @@ exports.postAceInit = function(hook, context) {
 function findAnchorAndScrollTo(anchor) {
   var count = 1;
   $('iframe[name="ace_outer"]').contents().find('iframe').contents().find("#innerdocbody").contents().each(function() {
-    if ($(this).text() == '#' + anchor) {
+    if ($(this).text().trim() == '#' + anchor.trim()) {
       var newY = $(this).context.offsetTop + "px";
       var $outerdoc = $('iframe[name="ace_outer"]').contents().find("#outerdocbody");
       var $outerdocHTML = $('iframe[name="ace_outer"]').contents().find("#outerdocbody").parent();
