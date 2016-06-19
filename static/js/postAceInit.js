@@ -15,7 +15,7 @@ function findAnchorAndScrollTo(anchor) {
       var $outerdoc = $('iframe[name="ace_outer"]').contents().find("#outerdocbody");
       var $outerdocHTML = $('iframe[name="ace_outer"]').contents().find("#outerdocbody").parent();
       $outerdoc.animate({scrollTop: newY});
-      if($.browser.mozilla) $outerdocHTML.animate({scrollTop: newY}); // needed for FF
+      if (browser.mozilla || browser.firefox) $outerdocHTML.animate({scrollTop: newY}); // needed for FF
       return false;
     }
     count++;
